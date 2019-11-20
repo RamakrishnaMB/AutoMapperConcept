@@ -18,6 +18,7 @@ namespace MVC5WebAM
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutofacConfigureMVC.RegisterAutofac();
+            AutoMapperConfig.Configure();
         }
     }
 }

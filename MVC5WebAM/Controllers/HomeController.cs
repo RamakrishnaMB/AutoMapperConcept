@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BuisnessLayer.Interface;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +10,21 @@ namespace MVC5WebAM.Controllers
 {
     public class HomeController : Controller
     {
+        private IDashBoardFeeServices _FeeDetailsService;
+
+        public HomeController(IDashBoardFeeServices FeeDetailsService)
+        {
+            _FeeDetailsService = FeeDetailsService;
+        }
+
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult GetFeeDetails()
+        {
+            List<FeeDetails> lstFeeDetails = _FeeDetailsService.GetfeeDetails();
             return View();
         }
 
