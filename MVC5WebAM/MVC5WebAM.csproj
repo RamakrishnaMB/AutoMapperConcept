@@ -196,11 +196,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Learn\MVC5Web\BuisnessLayer\BuisnessLayer.csproj">
+    <ProjectReference Include="..\BuisnessLayer\BuisnessLayer.csproj">
       <Project>{a281a6e6-209f-479e-b4e9-a0d946c82070}</Project>
       <Name>BuisnessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Learn\MVC5Web\Models\Models.csproj">
+    <ProjectReference Include="..\Models\Models.csproj">
       <Project>{3c87a43c-7603-4a3a-a537-374eac03275a}</Project>
       <Name>Models</Name>
     </ProjectReference>
