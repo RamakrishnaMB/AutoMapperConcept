@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperProfiles\FeeDetailsProfile.cs" />
+    <Compile Include="AutoMapperSettings\AutoMapperConfig.cs" />
     <Compile Include="DependencyInjection\BusinessInjectionModule.cs" />
     <Compile Include="Implementation\DashBoardFeeServices.cs" />
     <Compile Include="Interface\IDashBoardFeeServices.cs" />
